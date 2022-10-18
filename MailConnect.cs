@@ -16,7 +16,7 @@ namespace WeatherAunonc
             try
             {
 
-                using (MailMessage mm = new MailMessage(personName + " weatherinformation@mail.ru", email))
+                using (MailMessage mm = new MailMessage(personName + " @.ru", email))
                 {
                     mm.Subject = personName + ", оповещение о погоде";
                     mm.Body = message;
@@ -26,7 +26,7 @@ namespace WeatherAunonc
                         sc.EnableSsl = true;
                         sc.DeliveryMethod = SmtpDeliveryMethod.Network;
                         sc.UseDefaultCredentials = false;
-                        sc.Credentials = new NetworkCredential("weatherinformation@mail.ru", "7Yp8J9SBpVUr9Ey7MmaK");//J3M-pRQ-Rdt-S7c
+                        sc.Credentials = new NetworkCredential("@.ru", "");
                         sc.Send(mm);
                     }
                 }
