@@ -12,7 +12,7 @@ namespace WeatherAunonc
     {
         public static void WeatherApis(string city, string personName, string email)
         {
-            string api = "14e8d36413e9e544406e91c5fa203605";
+            string api = "";
 
             string param = "&units=metric";
 
